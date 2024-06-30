@@ -1,13 +1,1103 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  height: 40px;
+  background-color: #0b70a6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  font-family: sans-serif;
+}
+
+.refresh-icon{
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: red;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.user-icon{
+  color: rgb(195, 194, 194);
+  position: fixed;
+  margin-left: 80px;
+  top: -1px;
+  z-index: 200;
+}
+.user-id{
+  position: fixed;
+  font-weight: bold;
+  color: rgb(191, 191, 191);
+  z-index: 200;
+  margin-left: 120px;
+  top: 12px;
+}
+
+.navLinks{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 100%;
+}
+
+.logout-icon{
+  color: white;
+  font-size: 27px;
+  transition: color 0.15s;
+  cursor: pointer;
+  position: fixed;
+  left: 96%;
+  top: 8px;
+  z-index: 200;
+}
+
+.logout-icon:hover{
+  color: red;
+}
+
+.navLinks:hover{
+  background-color: rgb(101, 98, 98);
+}
+
+.Home{
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+}
+.homePage{
+  height: 350px;
+  background-color: rgb(156, 210, 251);
+  display: grid;
+  align-items: center;
+  margin-top: 40px;
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: 180px 180px;
+  border-bottom: 3px solid white;
+  width: 410px;
+  margin-left: 35%;
+  padding-left: 40px;
+}
+
+.left-icon{
+  height: 190px;
+}
+
+.right-icon{
+  margin-top: 15px;
+  height: 155px;
+}
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.welcome{
+  height: 207px;
+  text-align: center;
+  font-family: sans-serif;
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+}
+
+h3{
+  font-size: 30px;
+}
+
+.welcome p{
+  font-size: 18px;
+}
+
+/* Footer.css */
+
+/* Footer Container */
+.footer-container {
+  background-color: #0b70a6;
+  padding: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+
+/* Contact Information */
+.contact-info {
+  margin-bottom: 20px;
+}
+
+
+
+/* Technical Support */
+.technical-support {
+  margin-bottom: 20px;
+}
+
+/* Note */
+.note {
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.home-button{
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: rgb(119, 201, 255);
+  color: black;
+}
+
+.home-button img{
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.home-button:hover{
+  color: white;
+}
+
+.landing-page{
+  height: 700px;
+  margin-top: 40px;
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+}
+
+.page-content{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 100%;
+}
+
+.side-bar{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  /*box-shadow: 1px 2px 20px rgb(207, 204, 204);*/
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgb(2, 2, 72);
+}
+
+.profile{
+  display: grid;
+  align-items: center;
+  justify-content: center;;
+}
+
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 600px;
+  padding-top: 20px;
+  box-shadow: 1px 2px 20px rgb(207, 204, 204);
+}
+
+.profile-picture {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  border-radius: 50%; /* Make square div round */
+  background-color: rgb(79, 162, 217); /* Placeholder background color */
+  margin-left: 180px;
+  display: flex;
+}
+
+.student-info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgb(79, 162, 217);
+  height: 40px;
+  display: grid;
+  align-items: center;
+  width: 500px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-label {
+  font-weight: bold;
+  margin-right: 8px;
+  width: 150px;
+  padding-left: 10px;
+}
+
+.info-value{
+  color: black;
+  margin-left: 100px;
+  padding-left: 10px;
+}
+
+.dashboard-page{
+  margin-top: 40px;
+}
+
+.board-section{
+  display: grid;
+  grid-template-columns: 200px 1fr 220px;
+}
+
+.dashboard{
+  width: 150px;
+  /*box-shadow: 1px 2px 20px rgb(207, 204, 204);*/
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.15s;
+  color: white;
+}
+
+.dashboard:hover{
+  transform: scale(1.1);
+  color: red;
+}
+
+.dashboard-icon{
+  color: white;
+  font-size: 50px;
+  display: block;
+  margin-left: 25px;
+}
+.dashboard span{
+  position: relative;
+  left: 25px;
+  font-size: 20px;
+  color: white;
+}
+.photo{
+  font-size: 200px;
+  color: white;
+}
+
+.links{
+  text-decoration: none;
+}
+
+
+.dashboard-page .right-content{
+  height: 650px;
+  display: grid;
+  justify-content: center;
+  background-color: rgb(241, 240, 240);
+}
+
+.notice-board{
+  background-color: rgb(2, 2, 72);
+  color: white;
+}
+
+.notice-board header{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  position: relative;
+  height: 50px;
+}
+
+.notice-board-title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.bell-icon{
+  position: absolute;
+  font-size: 30px;
+  right: 30px;
+}
+
+.message{
+  width: auto;
+  height: auto;
+  background-color: rgb(8, 8, 94);
+  padding: 0;
+  margin: 0;
+  border: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.message h4{
+  display: grid;
+  align-items: center;
+  height: 8px;
+  color: rgb(145, 144, 144);
+}
+
+.message .info{
+  height: auto;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(164, 164, 164);
+}
+
+.report{
+  display: grid;
+  justify-content: center;
+  width: px;
+  box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.4);
+}
+
+.report ul{
+  width: 700px;
+}
+.report li{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.grade-list .course-title{
+  margin-left: 10px;
+}
+
+.grade-list .grade{
+  margin-right: 30px;
+}
+
+.current-sem{
+  margin-left: 50px;
+}
+
+.notifications-container{
+  position: relative;
+}
+
+.notification-icon{
+  color: rgb(164, 0, 0);
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  left: 85%;
+  top: -50px;
+}
+
+.notification-badge{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(151, 2, 57);
+  position: absolute;
+  left: 13px;
+}
+
+.badge-container{
+  position: absolute;
+  background-color: rgb(134, 172, 198);
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 20px;
+  display: grid;
+  align-items: center;
+  top: -15px;
+  left: 35px;
+}
+
+.notification{
+  background-color: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  position: relative;
+  left: 65%;
+  text-align: center;
+}
+
+.transcript-page{
+  margin-top: 40px;
+  height: 700px;
+}
+
+.results-page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-container li{
+  border-bottom: 1px solid rgb(79, 162, 217);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.level-filter{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50px;
+  background-color: rgb(170, 199, 218);
+}
+
+.level-filter button{
+  background-color: rgb(170, 199, 218);
+  width: 120px;
+  color: red;
+  border: none;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.results-container{
+  border-top: 1px solid black;
+  width: 750px;
+  margin-top: 20px;
+  max-height: 550px;
+  overflow-y: auto
+  /*box-shadow: 1px 2px 20px rgb(207, 204, 204)*/;
+}
+
+.results-container .course-title{
+  width: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.results-container .grade{
+  position: relative;
+  width: 30px;
+  color: rgb(106, 105, 105);
+}
+
+/*LOGIN PAGE*/
+.login-page{
+  height: 700px;
+  font-family: sans-serif;
+  display: grid;
+  justify-content: center;
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+}
+.login-container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 1px 5px 10px rgba(29, 28, 28, 0.1);
+  width: 500px;
+  height: 88%;
+  border: 1px solid #ccc;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error-msg {
+  color: #ff0000;
+}
+
+/*MISSING GRADE FORM PAGE*/
+.report-form{
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+  height: 675px;
+  margin-top: 40px;
+}
+.form-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.missing-grade-form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+  box-shadow: 1px 5px 10px rgba(29, 28, 28, 0.1);
+  align-items: center;
+  padding: 20px;
+  height: 600px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 500px;
+}
+
+.form-label {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.form-textarea {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 500px;
+  resize: vertical;
+  max-height: 150px;
+}
+
+.form-submit-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(107, 1, 1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-submit-button:hover{
+  background-color: rgb(165, 3, 3);
+}
+
+.confirmation-message {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  color: rgb(107, 1, 1);
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/*CONTACT PAGE*/
+.contact-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-list h2,
+.email-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.instructor-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instructor-list li {
+  cursor: pointer;
+  padding: 12px 24px;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.instructor-list li:hover {
+  background-color: #eaeaea;
+}
+
+.email-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.email-form p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #666;
+}
+
+.email-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+}
+
+.email-form input[type='text'],
+.email-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.send-email-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.send-email-btn:hover {
+  background-color: #0056b3;
+}
+
+.email-form textarea {
+  width: 800px; /* Set your desired fixed width */
+  height: 200px; /* Set your desired fixed height */
+  resize: vertical; /* Disable resizing of the textarea */
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.grades-page{
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 100px;
+  margin-top: 40px;
+  height: 700px;
+}
+
+.grade-table {
+  width: 800px;
+  border-collapse: collapse;  
+}
+
+.grades-page .semester-header{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(135, 0, 0);
+}
+
+.table-container{
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.grade-table th,
+.grade-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.grade-table th {
+  background-color: #f2f2f2;
+}
+
+.grade-table .level-100 {
+  background-color: #effdff;
+}
+
+.grade-table .level-200 {
+  background-color: rgba(206, 17, 38, 0.1);
+}
+
+.grade-table .level-300 {
+  background-color: #effdff;
+}
+
+.grade-table .level-400 {
+  background-color: #ffe082;
+}
+
+.grade-table .semester-1, .semester-2 {
+  font-weight: bold;
+}
+
+
+.grade-report .searchbar{
+  width: 100%;
+  font-family: sans-serif;
+  display: flex;
+  position: relative;
+}
+
+.grade-report input{
+  font-size: 18px;
+}
+
+
+.search-icon{
+  font-size: 30px;
+  position: absolute;
+  left: 750px;
+  top: 20px;
+  color: #666;
+}
+
+.grades-page-title{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(41, 40, 40);
+}
+
+.table-section{
+  display: grid;
+  justify-content: center;
+  position: relative;
+  box-shadow: 1px 2px 20px rgb(207, 204, 204);
+  font-family: sans-serif;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.table-section select{
+  width: 190px;
+  height: 70px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.table-section select:hover{
+  background-color: rgba(206, 17, 38, 0.1);
+}
+
+/*DASHBOARD PAGE*/ 
+.board-page{  
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 230px;
+  margin-top: 30px;
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+} 
+
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 800px;
+}
+
+.dashboard-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grade-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.grade-table th,
+.grade-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.grade-table th {
+  background-color: #f2f2f2;
+}
+
+.missing-grades{
+  background-color: rgba(206, 17, 38, 0.1);
+  padding: 20px;
+}
+.missing-grades h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.missing-grades .missing-count {
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.alert-icon {
+  margin-right: 5px;
+  color: red;
+  font-size: 40px;
+  position: absolute;
+  top: -10px;
+  left: -50px;
+}
+
+
+.performance-bar {
+  margin-top: 30px;
+}
+
+.performance-bar p{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar.green {
+  background-color: green;
+}
+
+.progress-bar.yellow {
+  background-color: rgb(30, 66, 195);
+}
+
+.progress-bar.red {
+  background-color: red;
+}
+
+.report-button{
+  margin-top: 15px;
+  background-color: rgb(107, 1, 1);
+}
+.report-button:hover{
+  background-color: rgb(165, 3, 3);
+}
+
+
+/* ContactInstructorPage.css */
+
+.contact-instructor-page{
+  background-image: url(https://uew.edu.gh/themes/custom/pinaman/images/patterns/climpek.png);
+  height: 690px;
+}
+
+.contactpage-title{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 80px;
+  display: grid;
+  align-items: center;
+}
+
+.contact-instructor-container-custom {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.instructors-list-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: -80px;
+  margin-left: 8px;
+}
+
+.instructor-item-custom {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor-details-custom {
+  margin-bottom: 10px;
+}
+
+.contact-btn-custom {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.contact-btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.email-section-custom {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-textarea-custom {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.send-email-btn-custom {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.send-email-btn-custom:hover {
+  background-color: #0056b3;
+}
+
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  transition: width 0.5s ease;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.sidebar-nav {
+  padding: 1rem;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.sidebar-nav.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100vw;
+  }
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
