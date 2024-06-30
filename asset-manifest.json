@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Frontend-Grading-Assignment/static/css/main.d5a943a5.css",
+    "main.js": "/Frontend-Grading-Assignment/static/js/main.c0b4147e.js",
+    "index.html": "/Frontend-Grading-Assignment/index.html",
+    "main.d5a943a5.css.map": "/Frontend-Grading-Assignment/static/css/main.d5a943a5.css.map",
+    "main.c0b4147e.js.map": "/Frontend-Grading-Assignment/static/js/main.c0b4147e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5a943a5.css",
+    "static/js/main.c0b4147e.js"
+  ]
+}
